@@ -1,7 +1,11 @@
 import { useState } from 'react';
 
+function generateRandomNum() {
+    return Math.floor(Math.random() * 100);
+}
+
 function RandomNumber() {
-    const [ randomNum ] = useState(100);
+    const [ randomNum ] = useState(generateRandomNum());
 
     return (<div>
         <h1>{randomNum}</h1>
