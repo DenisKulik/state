@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 function RandomNumber() {
-    const [ randomNum, setRandomNum ] = useState(100);
+    const [ randomNum ] = useState(100);
 
     return (<div>
         <h1>{randomNum}</h1>
